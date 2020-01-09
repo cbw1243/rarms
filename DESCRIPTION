@@ -1,0 +1,22 @@
+Package: rarms
+Type: Package
+Title: Access Data from the USDA ARMS Data API
+Version: 1.0.0
+Author@R: c(person(given = "Bowen", family = "Chen", role = c("aut, "cre"), email = "bwchen0719@gmail.com", comment = c(ORCID = "0000-0003-0370-2756")),
+            person(given = "Seong", family = "Yun", role = "ctb"), 
+            person(given = "Benjamin", family = "Gramig", role = "ctb"))
+Author: Bowen Chen [aut, cre],
+  Seong Yun [ctb],
+  Benjamin Gramig [ctb]   
+Maintainer: Bowen Chen <bwchen0719@gmail.com>
+Description: Interface to access data via the United States Department of Agriculture's Agricultural Resource Management Survey (ARMS) 
+  Data API <https://www.ers.usda.gov/developer/data-apis/arms-data-api/>. Convenience functions 
+  facilitate building queries based on available parameters and valid parameter values.
+Encoding: UTF-8
+License: GPL (>= 2)
+LazyData: true
+RoxygenNote: 7.0.2
+Depends: R (>= 3.6.0)
+Imports: 
+        jsonlite (>= 1.6)
+
