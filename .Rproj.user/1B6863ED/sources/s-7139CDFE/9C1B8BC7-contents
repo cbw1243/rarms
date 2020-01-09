@@ -1,4 +1,0 @@
-setKey <- function(key){
-  envir = new.env()
-  assign('key', data, envir)
-}
