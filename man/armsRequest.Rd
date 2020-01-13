@@ -14,9 +14,9 @@ armsRequest(
 )
 }
 \arguments{
-\item{state}{optional character vector. It could be full state names or abbreviated state names. All states if NULL.}
+\item{state}{optional character vector. It can be full state names, or state id, or state code. Use NULL if for all states.}
 
-\item{year}{numerical vector. Which years to request? Required.}
+\item{year}{numerical/character vector. Which year(s) to request? This is required.}
 
 \item{category}{optional character vector. Category names or IDs.}
 
@@ -26,23 +26,28 @@ armsRequest(
 
 \item{farmtype}{optional vector. Farm type or ID.}
 }
+\value{
+The function returns a list with three elements: (1) request status, (2) request information, (3) the requested data.
+}
 \description{
 The primary function in the \code{rarms} package to send request to the USDA ARMS Data API.
-The function returns a list contains request status, request information, and the requested data.
-To make valid request, users should specify correct parameters. The USDA website provides details on how to
-specify parameters (\url{https://www.ers.usda.gov/developer/data-apis/arms-data-api/}). Users can also use
-\code{param_search} to see possible values for each argument in \code{armsRequest} (see examples in \code{param_search})
 }
 \details{
-Note that for most arguments, users can use id or codes to make easier requests. For example, the id and code for Arkansas is 05 and
-ar, respectively. Users can let state = '05' or state = 'ar' to request data for Arkansas. Similarily, the id for the report named Farm Business
-Balance Sheet is 1, users can let report = 1 to request data from this report.
+An API key is needed for sending the data requests. To apply for a key, go to this website: \url{https://www.ers.usda.gov/developer/}. Then click Register.
+
+To make valid request, users should provide valid values for the input variables (e.g., report). Users can refer to this
+USDA website for information on the input variables (\url{https://www.ers.usda.gov/developer/data-apis/arms-data-api/}).
+Users can also use \code{paramSearch} in the package to get possible valid values for each input variable (see examples in \code{paramSearch}).
+
+For most input variables, users can use id or codes instead of original names to simplify the requests. For example, the id and code for Arkansas is 05 and
+ar, respectively. Users can let state = '05' or state = 'ar' to request data for Arkansas instead of letting state = 'Arkansas'.
+Similarily, the id for the report named Farm Business Balance Sheet is 1, users can simply let report = 1 to request data from this report.
 }
 \examples{
-# key <- 'Your key'
-
-# test <- armsRequest(year = c(2005:2018), state = c('05', '06'), category = c('age', 'ftyppl'),
-# report = c(1, 2), variable = c('kount', 'accrop'), farmtype = 'all farms')
-
-# data <- test$data
+\dontrun{
+key <- 'Your key' # Specify your API key here.
+test <- armsRequest(year = c(2005:2018), state = c('05', '06'), category = c('age', 'ftyppl'),
+ report = c(1, 2), variable = c('kount', 'accrop'), farmtype = 'all farms')
+data <- test$data # Get the data returned from the ARMS data API.
+}
 }
