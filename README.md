@@ -9,5 +9,5 @@ Install the devtools package if you do not have it on your computer.
 
 If you encounter an issue or have any suggestion, please contact: Bowen Chen, PhD (bwchen0719@gmail.com)
 
-The development of this package was supported by USDA-NRCS Agreement No. NR193A750016C001 through the Cooperative Ecosystem Studies Units network. Any opinions, findings, conclusions, or recommendations expressed are those of the author(s) and do not necessarily reflect the view of the U.S. Department of Agriculture. 
+**Acknowledgement**: The development of this package was supported by USDA-NRCS Agreement No. NR193A750016C001 through the Cooperative Ecosystem Studies Units network. Any opinions, findings, conclusions, or recommendations expressed are those of the author(s) and do not necessarily reflect the view of the U.S. Department of Agriculture. Dr. Benjamin Gramig is a contributor of this package. 
 
