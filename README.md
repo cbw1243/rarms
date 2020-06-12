@@ -1,4 +1,4 @@
-Access Data from the USDA ARMS Data API: https://www.ers.usda.gov/developer/data-apis/arms-data-api/ 
+rarms: Access Data from the USDA ARMS Data API: https://www.ers.usda.gov/developer/data-apis/arms-data-api/ 
 
 ## Description   
 Agricultural Resource Management Survey (ARMS) is the U.S. Department of Agriculture (USDA)’s primary source of information on the production practices, resource use, and economic well-being of America’s farms and ranches. The results of this survey are the only source of information available for objective evaluation of many critical issues related to agriculture and the rural economy.
