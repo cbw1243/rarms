@@ -11,7 +11,7 @@ The `rarms` package is built on the ARMS data API, and it allows users to access
 To install the package, use: 
 ``
 devtools::install_github("cbw1243/rarms")
-``
+``   
 Install the `devtools` package if you do not have it on your computer. 
 
 ## Note   
