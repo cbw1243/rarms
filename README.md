@@ -8,7 +8,7 @@ Recently, USDA’s Economic Research Service (ERS) is making data from USDA’s 
 The `rarms` package is built on the ARMS data API, and it allows users to access and download ARMS data directly. 
 
 ## Package Installation   
-To install the package, use: 
+To install the package, use:    
 ``
 devtools::install_github("cbw1243/rarms")
 ``   
