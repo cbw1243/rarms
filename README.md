@@ -1,3 +1,5 @@
+![CRAN/METACRAN](https://img.shields.io/cran/v/rarms?color=brightgreen) ![](http://cranlogs.r-pkg.org/badges/grand-total/rarms?color=brightgreen) 
+
 rarms: Access Data from the USDA ARMS Data API: https://www.ers.usda.gov/developer/data-apis/arms-data-api/ 
 
 ## Description   
